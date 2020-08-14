@@ -1,0 +1,54 @@
+$main_colour: #65005E;
+$body_colour: #333;
+
+body{
+  font-family: 'SFUIDisplay-Regular', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'SFUIDisplay', sans-serif;
+}
+
+.text-normal{
+  font-size: 1rem;
+}
+
+.text-small{
+  font-size: 0.8rem;
+}
+
+.text-bold{
+  font-weight: 700;
+}
+
+/* SF Fonts */
+.SF-thin{
+  font-weight: 200;
+}
+
+h1.home-title{
+  font-weight: 700;
+}
+
+a{
+  color: $body_colour;
+  &:hover{
+    color: $body_colour;
+    //text-decoration: none;
+  }
+  &.btn{
+    &:hover{
+      //color: #ffffff !important;
+    }
+  }
+}
+
+.pre{
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-size: 87.5%;
+  background: lighten($body_colour,75%);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* colours */
