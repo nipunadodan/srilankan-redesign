@@ -1,8 +1,121 @@
 <div class="container">
-    <div class="row min-vh-100 align-items-center">
-        <div class="col">
-            <h1 class="text-bold">Welcome to Orange-HTML</h1>
-            <p>Change your settings from <span class="pre">config.json</span></p>
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <img src="assets/img/SriLankan_Airlines_logo.png" style="height:50px;" class="my-3 d-inline" />
+            <img src="assets/img/ul_logo_oneworld.png" style="height:50px;" class="my-3 d-inline" />
+        </div>
+        <div class="col-md-4">
+            <div class="input-group my-3">
+                <input type="search" name="search" id="search" class="form-control border-right-0" placeholder="Search" autocomplete="off" autofocus="" required="" style="border:1px solid #aaaaaa">
+                <div class="input-group-append">
+                    <span class="input-group-text bg-white border-left-0" style="border:1px solid #aaaaaa" id="basic-addon2"><i class="la la-search text-muted" style=" transform: rotate(-90deg);"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 align-items-center d-flex text-right text-muted" id="top-nav">
+            <a href="#" class="text-muted"><i class="la la-facebook-official la-2x la-fw"></i></a>
+            <a href="#" class="text-muted"><i class="la la-instagram la-2x la-fw"></i></a>
+            <a href="#" class="text-muted"><i class="la la-twitter la-2x la-fw"></i></a>
+            <a href="#" class="text-muted"><i class="la la-linkedin la-2x la-fw"></i></a>
+            <a href="#" class="text-muted"><i class="la la-youtube la-2x la-fw"></i></a>
+            <a href="#"><img src="assets/img/flysmiles.png" style="height:50px;" class="ml-4 d-inline"></a>
+            <a href="#" class="text-muted"><div class="ml-3 d-inline text-bold h6 text-right">EN</div></a>
+        </div>
+    </div>
+</div>
+<img class="w-100" src="assets/img/Sri_lanka_banner.jpg" />
+
+<div class="container">
+    <div class="row" style="margin-top: -65px;">
+        <div class="col-12 bg-main pt-4">
+            <ul class="nav nav-tabs no-gutters text-center text-uppercase">
+                <li class="nav-item col">
+                  <a class="nav-link active text-bold" href="#">Book</a>
+                </li>
+                <li class="nav-item col">
+                  <a class="nav-link text-white" href="#">Hotels</a>
+                </li>
+                <li class="nav-item col">
+                  <a class="nav-link text-white" href="#">Manage</a>
+                </li>
+                <li class="nav-item col">
+                  <a class="nav-link text-white" href="#">Check-in</a>
+                </li>
+                <li class="nav-item col">
+                  <a class="nav-link text-white" href="#">Schedule</a>
+                </li>
+                <li class="nav-item col">
+                  <a class="nav-link text-white" href="#">Status</a>
+                </li>
+              </ul>
+        </div>
+        <div class="col-12 bg-lightgray py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <label>From</label>
+                    <input type="text" name="from" placeholder="From" />
+                </div>
+                <div class="col-md-3 col-6">
+                    <label>To</label>
+                    <input type="text" name="to" placeholder="To" />
+                </div>
+                <div class="col-md-3 col-6">
+                    <label>Departure</label>
+                    <input type="date" name="departure" placeholder="Departure" />
+                </div>
+                <div class="col-md-3 col-6">
+                    <label>Return</label>
+                    <input type="date" name="return" placeholder="Return" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <label>Class</label>
+                    <select class="" id="class" name="class" style="width:100% !important">
+                        <option value="E" selected="selected">Economy</option>
+                        <option value="B">Business</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col">
+                            <label>Adults</label>
+                            <select name="adults">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label>Children</label>
+                            <select name="children">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label>Infants</label>
+                            <select name="infants">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <input type="radio" name="resultby" class="custom-radio w-auto" id="schedule"> <label class="mr-4" for="schedule">Schedule</label>
+                    <input type="radio" name="resultby" class="custom-radio w-auto" id="price" checked> <label class="mr-4" for="price">Price (Dates Flexible)</label>
+                </div>
+            </div>
         </div>
     </div>
 </div>

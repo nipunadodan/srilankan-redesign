@@ -10,12 +10,15 @@ dyn_function['page-load'] = function (filename) {
             console.log(xhr.status+" "+textStatus+" "+error);
             $.get( "pages/404.html", function( data ) {
                 $( "#content" ).html( data );
-                //alert( "Load was performed." );
             });
         },
         success: function(data, textStatus, xhr){
             if(xhr.status == 200){
                 $('#content').html(data);
+                $.get('config.json', function (configjson){
+                    const config = configjson;
+                    $('title').html(config.site_name);
+                });
             }
         }
     });
