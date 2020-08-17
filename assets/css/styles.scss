@@ -9,6 +9,10 @@ body{
   font-family: 'SFUIDisplay-Regular', sans-serif;
 }
 
+.srilankan{
+  font-family: 'SriLankan', 'Roboto', sans-serif;
+}
+
 h1,h2,h3,h4,h5,h6{
   font-family: 'SFUIDisplay', sans-serif;
 }
@@ -59,6 +63,11 @@ a{
   background: lighten($body_colour,75%);
   padding: 5px 10px;
   border-radius: 3px;
+}
+
+.py-15{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 /* colours */
@@ -245,4 +254,18 @@ select{
 
 .nav-tabs{
   border-bottom: none !important;
+}
+
+.banner-container{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/Sri_lanka_banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+}
+.banner-text{
+  position: absolute; 
+  top: calc(50% - 58px); //24px is font size of H1 I assume 
+  left: 0;
+  text-align: center; 
+  width: 100%; 
 }
