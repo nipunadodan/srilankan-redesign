@@ -1,9 +1,11 @@
 $main_colour: #1F3C90;
 $secondary_colour: #0380BB;
+$tertiary_colour: #D21835;
 $dark_gray: #cfcfcf;
 $light_gray: #efefef;
 $gray: #888;
 $body_colour: #333;
+$sfregular: 'SFUIDisplay-Regular', sans-serif;
 
 body{
   font-family: 'SFUIDisplay-Regular', sans-serif;
@@ -65,7 +67,7 @@ a{
   border-radius: 3px;
 }
 
-.py-15{
+.py-10{
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
@@ -268,4 +270,21 @@ select{
   left: 0;
   text-align: center; 
   width: 100%; 
+}
+
+.airport-code{
+  font-family: "SriLankan", sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.airport-desc{
+  font-family: $sfregular !important;
+  font-size: 0.8rem;
+  color:#ffffff;
+}
+.swap-container{
+  margin: 2rem 0;
+  a{
+    color:$tertiary_colour !important;
+  }
 }
